@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" backgroundColor="#F7F7F7">
+    <ActionBar title="Booking" backgroundColor="#FF6D6D" color="#FFFFFF">
+        <NavigationButton visibility="collapsed" />
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout padding="16">
+
+            <!-- Banner -->
+            <StackLayout style="margin-bottom: 24; elevation: 3; border-radius: 10;">
+                <Image src="~/images/booking_banner.jpg" height="180" stretch="aspectFill" style="border-radius: 10;" />
+            </StackLayout>
+
+            <!-- Booking Categories -->
+            <Label text="Booking Options" style="font-size: 20; font-weight: bold; color: #FF6D6D; margin-bottom: 16;" />
+            
+            <GridLayout columns="*,*,*" style="margin-bottom: 24;">
+                <StackLayout col="0" style="align-items: center;">
+                    <Image src="/app/assets/flight.jpg" height="50" width="50" />
+                    <Label text="Flights" style="font-size: 12; color: #333333; text-align: center; margin-top: 4;" />
+                </StackLayout>
+                <StackLayout col="1" style="align-items: center;">
+                    <Image src="/app/assets/hotel.jpg" height="50" width="50" />
+                    <Label text="Hotels" style="font-size: 12; color: #333333; text-align: center; margin-top: 4;" />
+                </StackLayout>
+                <StackLayout col="2" style="align-items: center;">
+                    <Image src="/app/assets/cars.jpg" height="50" width="50" />
+                    <Label text="Cars" style="font-size: 12; color: #333333; text-align: center; margin-top: 4;" />
+                </StackLayout>
+            </GridLayout>
+
+            <!-- Booking Details Section -->
+            <Label text="Enter Booking Details" style="font-size: 20; font-weight: bold; color: #FF6D6D; margin-bottom: 16;" />
+
+            <!-- Destination Selection -->
+            <StackLayout padding="16" backgroundColor="#FFFFFF" style="margin-bottom: 16; border-radius: 12; elevation: 3; border-width: 1; border-color: #ECECEC;">
+                <Label text="Destination" style="font-size: 16; font-weight: bold; color: #333333; margin-bottom: 8;" />
+                <TextField hint="Enter destination" text="{{ destination }}" style="font-size: 16; color: #333333; placeholder-color: #999999;" />
+            </StackLayout>
+
+            <!-- Date Selection -->
+            <StackLayout padding="16" backgroundColor="#FFFFFF" style="margin-bottom: 16; border-radius: 12; elevation: 3; border-width: 1; border-color: #ECECEC;">
+                <Label text="Date" style="font-size: 16; font-weight: bold; color: #333333; margin-bottom: 8;" />
+                <TextField hint="Select date" text="{{ date }}" style="font-size: 16; color: #333333; placeholder-color: #999999;" />
+            </StackLayout>
+
+            <!-- Number of Passengers -->
+            <StackLayout padding="16" backgroundColor="#FFFFFF" style="margin-bottom: 16; border-radius: 12; elevation: 3; border-width: 1; border-color: #ECECEC;">
+                <Label text="Number of Passengers" style="font-size: 16; font-weight: bold; color: #333333; margin-bottom: 8;" />
+                <TextField hint="Enter number of passengers" text="{{ passengers }}" keyboardType="number" style="font-size: 16; color: #333333; placeholder-color: #999999;" />
+            </StackLayout>
+
+            <!-- Confirm Booking Button -->
+            <Button text="Confirm Booking" tap="{{ onConfirmBookingTap }}" backgroundColor="#FF6D6D" color="#FFFFFF" style="font-size: 18; padding: 16 0; border-radius: 12; margin-top: 20; elevation: 4;" />
+        </StackLayout>
+    </ScrollView>
+</Page>
