@@ -9,7 +9,7 @@
 
             <!-- Banner -->
             <StackLayout style="margin-bottom: 24; elevation: 3; border-radius: 10;">
-                <Image src="~/images/booking_banner.jpg" height="180" stretch="aspectFill" style="border-radius: 10;" />
+                <Image src="https://picsum.photos/800/400?random=10" height="180" stretch="aspectFill" style="border-radius: 10;" />
             </StackLayout>
 
             <!-- Booking Categories -->
@@ -17,15 +17,15 @@
             
             <GridLayout columns="*,*,*" style="margin-bottom: 24;">
                 <StackLayout col="0" style="align-items: center;">
-                    <Image src="/app/assets/flight.jpg" height="50" width="50" />
+                    <Image src="https://picsum.photos/50/50?random=11" height="50" width="50" />
                     <Label text="Flights" style="font-size: 12; color: #333333; text-align: center; margin-top: 4;" />
                 </StackLayout>
                 <StackLayout col="1" style="align-items: center;">
-                    <Image src="/app/assets/hotel.jpg" height="50" width="50" />
+                    <Image src="https://picsum.photos/50/50?random=12" height="50" width="50" />
                     <Label text="Hotels" style="font-size: 12; color: #333333; text-align: center; margin-top: 4;" />
                 </StackLayout>
                 <StackLayout col="2" style="align-items: center;">
-                    <Image src="/app/assets/cars.jpg" height="50" width="50" />
+                    <Image src="https://picsum.photos/50/50?random=13" height="50" width="50" />
                     <Label text="Cars" style="font-size: 12; color: #333333; text-align: center; margin-top: 4;" />
                 </StackLayout>
             </GridLayout>
